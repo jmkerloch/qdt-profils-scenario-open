@@ -19,6 +19,10 @@ steps:
         value: "%USERPROFILE%/Opale Energies Naturelles/Carto - SIG/0_RESSOURCES"
         value_type: path
         qgis_ini_use: true
+      - name: QGIS_CHEMIN_RESSOURCES_PARTAGEES
+        value: c:/users/%username%/.cache/qgis-deployment-toolbelt/repositories/clermont-qgis-commons
+        scope: "user"
+        action: "add"
       - name: PYQGIS_STARTUP
         action: "add"
         scope: "user"
