@@ -16,7 +16,7 @@ steps:
       - name: SIG_RESOURCES_FOLDER
         action: "add"
         scope: "user"
-        value: "/home/toto/Opale Energies Naturelles/Carto - SIG/0_RESSOURCES"
+        value: "%USERPROFILE%/Opale Energies Naturelles/Carto - SIG/0_RESSOURCES"
         value_type: path
         qgis_ini_use: true
       - name: PYQGIS_STARTUP
