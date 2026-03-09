@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/refs/heads/main/docs/schemas/scenario/qdt_scenario.json
+
+metadata:
+  title: "Ressources QGIS partagées"
+  id: test-env-var
+  description: >-
+    Scénario QDT qui déploie les ressources partagées de QGIS.
+
+settings:
+  SCENARIO_VALIDATION: true
+
+steps:
+  - name: Définit l'emplacement des ressources partagées en variable d'environnement 
+    uses: manage-env-vars
+    with:
+      - name: QGIS_CHEMIN_RESSOURCES_PARTAGEES
+        value: c:/users/%username%/.cache/qgis-deployment-toolbelt/repositories/clermont-qgis-commons
+        scope: "user"
+        action: "add"
