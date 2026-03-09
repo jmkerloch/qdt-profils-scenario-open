@@ -39,7 +39,7 @@ steps:
     uses: qprofiles-downloader
     with:
       protocol: git_remote
-      source: https://github.com/Opale-en/qdt-profils-scenario-open.git
+      source: https://github.com/jmkerloch/qdt-profils-scenario-open.git
       branch: main
 
   - name: Synchronise les profils locaux avec les profils téléchargés
